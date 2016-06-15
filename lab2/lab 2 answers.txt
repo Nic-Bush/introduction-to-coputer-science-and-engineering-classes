@@ -1,0 +1,26 @@
+
+A 12
+the bug was that there was no null value at the end of the append function.
+
+ Q 13
+What line caused the segmentation fault?
+
+A 13
+
+the line with scanf("%d",input); caused the segmentation fault.
+Q 14
+How do you fix the line so it works properly?
+
+A 14
+
+you add a & before input so that it can save values.
+
+
+Q15
+What is the bug? How do you fix it?
+
+A 15
+
+the bug is that nothing is being saved, it can be fixed by making the address of sum go in instead of sum, this will make all of the values changed in sum actually change it and will give a value other than zero as the answer.
+
+ 

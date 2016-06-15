@@ -1,0 +1,2 @@
+q1. a programmer might not notice even after testing the buggy program because it is still possible for the program to run it could just possibly critically fail 
+q2. it is guaranteed to crash because a null pointer litterally points no where and therefore we cannot take its address.

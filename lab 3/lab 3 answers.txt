@@ -1,0 +1,11 @@
+int num;//stack allocated stack no        
+int *ptr; //stack allocated stack no
+        int **handle; // stack allocated stack no
+ 
+        num = 14; //stack no - no
+        ptr = (int *)malloc(2 * sizeof(int)); //heap & stack allocated heap yes
+        handle = &ptr; //stack no - no
+        *ptr = num; // heap no - no
+        ptr = &num; //stack no - yes
+        handle = (int **)malloc(1 * sizeof(int **)); //heap & stack allocated h$
+}

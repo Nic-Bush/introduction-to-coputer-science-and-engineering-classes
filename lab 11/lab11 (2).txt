@@ -1,0 +1,51 @@
+﻿Q1. What is the minimum number of states you need for this FSM?
+		The minimum number of states needed is 2 since it is a binary counter when CE = 1, and when CE = 0, output does not change
+
+Q2. What is the relation between the state and the output? (ie are they
+ always the same value or different)
+	when in binary counter state output changes, else it doesnt change
+
+Q3. What are the first 10 values of “Register 2” in the first 10 cycles?
+ 	0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+
+
+Q4. What operation or function does this FSM perform?
+	fibonachi sequence was generated. 
+Q5. Write a C program that does the same operation or function and
+ returns the value stored in “Register 2” as a function of the number of
+ clock ticks since the FSM started.
+	
+
+#include "stdio.h" 
+
+
+int main()
+{
+	
+int reg1 = 1, reg2 = 0;
+	
+int tickCount, sum;
+
+	
+printf ("Enter number of clock ticks\n");
+	
+scanf("%d", &tickCount);
+
+	
+while (tickCount > 1)
+	
+{	
+		
+	sum = reg1 + reg2;
+		
+	reg2 = reg1;
+		
+	reg1 = sum;
+		
+	tickCount--;
+	
+}
+
+	
+reg2 = sum;
+return reg2;

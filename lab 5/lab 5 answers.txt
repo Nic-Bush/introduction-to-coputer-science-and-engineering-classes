@@ -1,0 +1,13 @@
+1.
+.data where data declarations go... items stated here are saved at next address
+.text pretty much your whole code is here... its the mips part.
+.word where the values of global variables go
+2.you click the check box next to line 15 there is no real code!!!!
+3. you continue to execute your code with the green play arrow at the top of the screen]
+you can step by step it by clicking the play button with a 1 bellow it.
+4.to find out their value we look at the register tab in mars
+to modify them we double click the registers row in the value tab and change it
+5. n is stored at 0x10010000
+we modify the number in . word to be 13 and get the answer 233
+6. syscall is a muultipurpose function in which by changing the value in $v0 we can change what it does for instance in line 18 we had $v0 set to 1 so it printed the value in $a0 whereas in line 20 it ended the program because the value in $v0 was 10
+ 

@@ -1,0 +1,8 @@
+q1. it fails to give the expected result because neither of the two strings are large enough to hold hello world, just large enough to fit themselves.
+q2. a way to fix this bug is to create a new string to mix them into it.
+q3. you run a program in gdb by adding the -g flag to gcc -o and then running gdb and the name of the program you made.
+ c is more primative than java and also i think it requires people to do things for themselves which also allows it to run faster.
+q4. 
+pro. it runs faster
+con. you can mess up really easily
+q5. i couldnt find this one cause it didnt seem to exist
